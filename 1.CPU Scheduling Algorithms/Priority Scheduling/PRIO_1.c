@@ -24,15 +24,6 @@ void findavgTime( int processes[], int n, int bt[])
 
 	printf("Processes Burst time Waiting time Turn around time\n");
 
-	for (int i=0; i<n; i++)
-	{
-		total_wt = total_wt + wt[i];
-		total_tat = total_tat + tat[i];
-		printf(" %d ",processes[i]);
-		printf("	 %d ", bt[i] );
-		printf("	 %d",wt[i] );
-		printf("	 %d\n",tat[i] );
-	}
 	int s=(float)total_wt / (float)n;
 	int t=(float)total_tat / (float)n;
 	printf("Average waiting time = %d",s);
