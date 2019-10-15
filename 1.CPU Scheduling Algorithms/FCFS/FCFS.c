@@ -15,7 +15,7 @@ for(t=1;t<n;t++)
 for(i=0;i<n;i++)
 {
 	tat[i]=wt[i]+brt[i];
-	total_tat=total_tat+tat[i];
+	
 }
 printf("\nprocess\t waitingtime\t turntime\t\n");
 for(i=0;i<n;i++)
