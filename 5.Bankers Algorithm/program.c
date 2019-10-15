@@ -53,7 +53,7 @@ void main()
         }
         cnt=0;
         fl=0;
-        while(cnt!=n)
+        
         {
                 g=0;
                 for(j=0; j<n; j++)
