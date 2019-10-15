@@ -35,31 +35,7 @@ void main()
 {
 
 int prr,arr,btt;
-int process[10],art[10],brt[10];//arrays to store process numbers,arrival time,burs ttime
-char str[100];
-int k=0,i=0,j,n=0,temp=0,pos,t=0,te=0;
-FILE *fpt=fopen("fcfs.txt","r");
-	printf("process arrtime bursttime\n");
-	//the following loop will read the data from a file using file pointer fp and store datas to corresponding array
-	while(fscanf(fpt,"%d:%d:%d",&prr,&arr,&btt)!=EOF)
-	{
-	process[i]=prr;
-	art[i]=arr;
-	brt[i]=btt;
-	printf("%d %d %d\n",process[i],art[i],brt[i]);
-	i++;
-	n++;
-	}
-
-printf ("%d\n",n);
-//sort the processes by their arrival time order
-for(k=0;k<n;k++)
- {
-
- 	 for(j=k+1;j<=n;j++)
-	{
-
-		
+int
 		if(art[k]>=art[j])
 	
 		{	
