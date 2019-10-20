@@ -1,61 +1,67 @@
 #include<stdio.h>
 #include<stdlib.h>
-int w, mutex = 1, full = 0, empty = 4, x = 0, b[4];
-main()//driver code
+ 
+int mutex=1,full=0,empty=3,x=0;
+ 
+int main()
 {
-    int n;
-    void producer(); //Function Declaration void consumer();
-    int wait(int);//operation on semaphore
-    int signal(int)//operation on semaphore;
-    printf("\nProducer-Consumer Problem\n");
-    printf("\n1.Produce\n2.Consume\n3.Exit\n");
-    do {
-        printf("Enter your choice: ");
-        scanf("%d", & n);
-        switch (n)
-        {
-        case 1: //Produce if((mutex==1)&&(empty!=0))
-            producer();//go to the function defined below
-            break;
-            else
-                printf("Buffer full\n");
-        case 2: //Consume if((mutex==1)&&(full!=0))
-            consumer();//go to the function defined below
-            break;
-            else
-                printf("Buffer empty\n");
-        case 3:
-            exit(0);
-            break;
-        }
-    }
-    while (1);
+	int n;
+	void producer();
+	void consumer();
+	int wait(int);
+	int signal(int);
+	printf("\n1.Producer\n2.Consumer\n3.Exit");
+	while(1)
+	{
+		printf("\nEnter your choice:");
+		scanf("%d",&n);
+		switch(n)
+		{
+			case 1:	if((mutex==1)&&(empty!=0))
+						producer();
+					else
+						printf("Buffer is full!!");
+					break;
+			case 2:	if((mutex==1)&&(full!=0))
+						consumer();
+					else
+						printf("Buffer is empty!!");
+					break;
+			case 3:
+					exit(0);
+					break;
+		}
+	}
+	
+	return 0;
 }
-int wait(int s) //wait operation
+ 
+int wait(int s)
 {
-    return (--s);
+	return (--s);
 }
-int signal(int s) //signal operation
+ 
+int signal(int s)
 {
-    return (++s);
+	return(++s);
 }
+ 
 void producer()
 {
-    mutex = wait(mutex);
-    full = signal(full);//one item will be added to the buffer
-    empty = wait(empty);
-    printf("Enter the value: ");
-    scanf("%d", & b[x]);
-    printf("Producer produces the item %d\n", b[x]);
-    x++;
-    mutex = signal(mutex);
+	mutex=wait(mutex);
+	full=signal(full);
+	empty=wait(empty);
+	x++;
+	printf("\nProducer produces the item %d",x);
+	mutex=signal(mutex);
 }
+ 
 void consumer()
 {
-    mutex = wait(mutex);
-    full = wait(full);
-    empty = signal(empty);//one item consumed from buffer
-    printf("Consumer consumes item %d\n", b[x - 1]);
-    x--;
-    mutex = signal(mutex);
+	mutex=wait(mutex);
+	full=wait(full);
+	empty=signal(empty);
+	printf("\nConsumer consumes item %d",x);
+	x--;
+	mutex=signal(mutex);
 }
