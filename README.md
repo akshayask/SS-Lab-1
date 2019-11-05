@@ -5,7 +5,7 @@ KTU system software lab programs explained
 
 - **[CPU Scheduling](https://github.com/Ajil5467/SS-Lab/tree/master/1.CPU%20Scheduling%20Algorithms)**
 
- - [1.1 First-Come, First-Served Scheduling ]
+ - [1.1 First-Come, First-Served Scheduling ](https://github.com/Ajil5467/SS-Lab/tree/master/1.CPU%20Scheduling%20Algorithms/FCFS)
 
  - [1.2 Shortest-Job-First Scheduling]
 
