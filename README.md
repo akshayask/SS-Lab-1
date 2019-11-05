@@ -1,5 +1,5 @@
 # SS-Lab
-[![download](https://img.shields.io/badge/Direct_Download-zip-blue.svg?logo=appveyor&longCache=true&style=for-the-badge)](https://github.com/KTU-CSE/System-Software-lab/releases/latest)
+
 KTU system software lab programs explained
 
 1.CPU Scheduling Algorithms
