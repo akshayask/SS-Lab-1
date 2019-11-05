@@ -1,7 +1,4 @@
-
-
 Algorithm :SCAN
-
 
 Step 1 : create an array trackmovement[] 
 Step 2 : set i = 0

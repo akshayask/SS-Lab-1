@@ -1,6 +1,5 @@
 Algorithm : FCFS
 
-
 Step 1 : create an array trackmovement[]
  Step 2 : set i = 0
 Step 3 : read cur_track
