@@ -5,13 +5,13 @@ KTU system software lab programs explained
 
 - **[CPU Scheduling](https://github.com/Ajil5467/SS-Lab/tree/master/1.CPU%20Scheduling%20Algorithms)**
 
- 1.1 First-Come, First-Served Scheduling 
+ -[1.1 First-Come, First-Served Scheduling ]
 
- 1.2 Shortest-Job-First Scheduling
+ -[1.2 Shortest-Job-First Scheduling]
 
- 1.3 Priority Scheduling
+ -[1.3 Priority Scheduling]
 
- 1.4 Round Robin CPU Scheduling
+-[ 1.4 Round Robin CPU Scheduling]
  
 2.File Organization Techniques
 
