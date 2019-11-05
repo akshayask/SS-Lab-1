@@ -31,7 +31,7 @@ KTU system software lab programs explained
  - [4.2 LRU](https://github.com/Ajil5467/SS-Lab/tree/master/4.Page%20Replacement%20Algorithms/LRU)
 
  - [4.3 LFU](https://github.com/Ajil5467/SS-Lab/tree/master/4.Page%20Replacement%20Algorithms/LFU)
-- **[5.Bankers Algorithm] 
+- **[5.Bankers Algorithm](https://github.com/Ajil5467/SS-Lab/tree/master/5.Bankers%20Algorithm)
 
 - **[6.Producer-Consumer Problem](https://github.com/Ajil5467/SS-Lab/tree/master/6.Producer-Consumer%20Problem) 
 
