@@ -1,3 +1,9 @@
+/*In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in.
+
+Page Fault – A page fault happens when a running program accesses a memory page that is mapped into the virtual address space, but not loaded in physical memory.
+
+Since actual physical memory is much smaller than virtual memory, page faults happen. In case of page fault, Operating System might have to replace one of the existing pages with the newly needed page. 
+In FIFO the first page will be replaced.*/
 #include<stdio.h>
 #include<conio.h>
 int fr[3];
@@ -9,7 +15,7 @@ int flag1=0,flag2=0,pf=0,frsize=3,top=0;
 clrscr();
 for(i=0;i<3;i++)
 {
-fr[i]=-1;
+fr[i]=-1;//initially the frames have no pages
 }
 for(j=0;j<12;j++)
 {
@@ -17,14 +23,14 @@ flag1=0;
 flag2=0;
   for(i=0;i<12;i++)
   {
-  if(fr[i]==page[j])
+  if(fr[i]==page[j])// if the page is already existed in frame then flag1=1 and flag2=1
   {
-    flag1=1;//for refering page array
-    flag2=1;//for refering frame array
+    flag1=1;
+    flag2=1;
     break;
     }
   }
-    if(flag1==0)
+    if(flag1==0)//to fill empty frame
     {
     for(i=0;i<frsize;i++)
     {
@@ -36,12 +42,12 @@ flag2=0;
     }
     }
     }
-    if(flag2==0)
+    if(flag2==0)//to add the page to top of the frame
     {
     fr[top]=page[j];
     top++;
     pf++;//number of page faults
-    if(top>=frsize)
+    if(top>=frsize)//if top exceeds frame size then set top=0 because first frame should be replaced in FIFO.
     top=0;
     }
     display();//display elements in frames 
