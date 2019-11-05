@@ -24,23 +24,20 @@ KTU system software lab programs explained
 
  - [3.3 C-SCAN](https://github.com/Ajil5467/SS-Lab/tree/master/3.Disk%20Scheduling%20Algorithms/C-SCAN) 
 
-4.Page Replacement Algorithms 
+- **[4.Page Replacement Algorithms](https://github.com/Ajil5467/SS-Lab/tree/master/4.Page%20Replacement%20Algorithms) 
 
- 4.1 FIFO
+ - [4.1 FIFO](https://github.com/Ajil5467/SS-Lab/tree/master/4.Page%20Replacement%20Algorithms/FIFO)
 
- 4.2 LRU
+ - [4.2 LRU](https://github.com/Ajil5467/SS-Lab/tree/master/4.Page%20Replacement%20Algorithms/LRU)
 
- 4.3 LFU
-5.Bankers Algorithm 
+ - [4.3 LFU](https://github.com/Ajil5467/SS-Lab/tree/master/4.Page%20Replacement%20Algorithms/LFU)
+- **[5.Bankers Algorithm] 
 
-6.Producer-Consumer Problem 
+- **[6.Producer-Consumer Problem](https://github.com/Ajil5467/SS-Lab/tree/master/6.Producer-Consumer%20Problem) 
 
-7.Dining-Philosophers Problem 
+- **[7.Dining-Philosophers Problem](https://github.com/Ajil5467/SS-Lab/tree/master/6.Producer-Consumer%20Problem)
 
-8.Pass 1 of Two pass assembler 
+- **[8.Pass 1 of Two pass assembler](https://github.com/Ajil5467/SS-Lab/tree/master/8.Pass%201%20of%20Two%20pass%20assembler) 
 
-9.Pass 2 of Two pass assembler 
+- **[9.Pass 2 of Two pass assembler](https://github.com/Ajil5467/SS-Lab/tree/master/9.Pass%202%20of%20Two%20pass%20assembler)
 
-10.Single Pass Assembler
-
-11.One Pass Macro Processor 
