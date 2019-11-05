@@ -1,0 +1,12 @@
+
+Step 1 : read number of pageframes n 
+Step 2 : create an array pageframes[n] 
+Step 3 : read the page reference string 
+Step 4 : loc = 0
+Step 5 : for each page in reference string do
+Step 6 : search pageframes[] for page
+Step 7 : if not present then
+Step 8 : increment page_f ault count 
+Step 9 : insert page to pageframes[loc] 
+Step 10 : loc = loc mod n
+

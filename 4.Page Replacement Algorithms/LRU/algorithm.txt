@@ -1,0 +1,15 @@
+Step 1 : read number of pageframes n 
+Step 2 : create an array pageframes[n] 
+Step 3 : read the page reference string
+Step 4 : for each page in reference string do
+Step 5 : search pageframes[] for page
+Step 6 : if present at frame i then
+Step 7 : increment pagerames[].accesscount
+Step 8 : else
+Step 9 : if all page frames are occuppied then
+Step 10 : let i =frame number with lowest accesscount
+Step 11 : replace pageframe[i] 
+Step 12 : else
+Step 13 : insert into next free location
+Step 14 : set pageframe[i].accesscount = 0
+
