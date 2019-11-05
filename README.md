@@ -12,6 +12,7 @@ KTU system software lab programs explained
  -[1.3 Priority Scheduling]
 
 -[ 1.4 Round Robin CPU Scheduling]
+- [FCFS Scheduling](CPU%20Scheduling/FCFS/README.md)
  
 2.File Organization Techniques
 
