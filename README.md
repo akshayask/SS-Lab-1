@@ -14,9 +14,9 @@ KTU system software lab programs explained
 - [ 1.4 Round Robin CPU Scheduling](https://github.com/Ajil5467/SS-Lab/tree/master/1.CPU%20Scheduling%20Algorithms/Round%20Robin%20CPU%20Scheduling)
 
  
-- **2.File Organization Techniques(https://github.com/Ajil5467/SS-Lab/tree/master/2.File%20Organization%20Techniques)**
+- **[2.File Organization Techniques](https://github.com/Ajil5467/SS-Lab/tree/master/2.File%20Organization%20Techniques)**
 
-- **3.Disk Scheduling Algorithms (https://github.com/Ajil5467/SS-Lab/tree/master/3.Disk%20Scheduling%20Algorithms)**
+- **[3.Disk Scheduling Algorithms](https://github.com/Ajil5467/SS-Lab/tree/master/3.Disk%20Scheduling%20Algorithms)**
 
  - [3.1 FCFS](https://github.com/Ajil5467/SS-Lab/tree/master/3.Disk%20Scheduling%20Algorithms/FCFS) 
 
