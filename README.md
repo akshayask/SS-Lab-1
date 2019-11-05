@@ -14,7 +14,7 @@ KTU system software lab programs explained
 - [ 1.4 Round Robin CPU Scheduling](https://github.com/Ajil5467/SS-Lab/tree/master/1.CPU%20Scheduling%20Algorithms/Round%20Robin%20CPU%20Scheduling)
 
  
-2.File Organization Techniques
+-**2.File Organization Techniques**
 
 3.Disk Scheduling Algorithms 
 
