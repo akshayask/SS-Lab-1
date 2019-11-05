@@ -3,7 +3,7 @@
 KTU system software lab programs explained
 ## Content
 
-- **[CPU Scheduling](CPU%20Scheduling)**
+- **[CPU Scheduling](CPU%20Scheduling%20Algorithms)**
 
  1.1 First-Come, First-Served Scheduling 
 
