@@ -21,7 +21,10 @@ int main(int argc, char * argv[])
     char sym[10], symaddr[10], obj1[10], obj2[10], s2[10], q[10], s3[10];
 
     f1 = fopen(argv[1], "r");
-    f2 = fopen("optab.txt", "r"); //Reading optab f3=fopen("symtab2.txt","w+"); f4=fopen("symtab1.txt","w+"); f5=fopen("output.txt","w+");
+    f2 = fopen("optab.txt", "r"); //Reading optab 
+    f3=fopen("symtab2.txt","w+"); 
+    f4=fopen("symtab1.txt","w+"); 
+    f5=fopen("output.txt","w+");
     fscanf(f1, "%s%s%s", la, mne, opnd);
 
     if (strcmp(mne, "START") == 0)
@@ -51,7 +54,8 @@ int main(int argc, char * argv[])
                     lc = lc + 3;
                     i = i + 1;
                     break;
-                } else fscanf(f2, "%s%s", mne1, opnd1);
+                } else 
+		fscanf(f2, "%s%s", mne1, opnd1);
             }
 
         } else
@@ -73,8 +77,10 @@ int main(int argc, char * argv[])
 
                     break;
 
-                } else fscanf(f3, "%s%s", sym, symaddr);
-            } //f3 if(strcmp(mne,"RESW")==0) lc=lc+3*atoi(opnd);
+                } else 
+		fscanf(f3, "%s%s", sym, symaddr);
+            } if(strcmp(mne,"RESW")==0) 
+		lc=lc+3*atoi(opnd);//f3 
             else if (strcmp(mne, "BYTE") == 0)
 
             {
@@ -104,7 +110,8 @@ int main(int argc, char * argv[])
             }
 
         } //
-        else if = -fseek(f2, SEEK_SET, 0);
+        else la =-
+	fseek(f2, SEEK_SET, 0);
         fscanf(f1, "%s%s%s", la, mne, opnd);
     }
     fseek(f5, SEEK_SET, 0);
@@ -119,7 +126,8 @@ int main(int argc, char * argv[])
         else if (strcmp(obj2, "-") == 0) {
             printf("^");
             len1 = strlen(obj1);
-            for (k = 0; k < len1; k++) printf("%d", obj1[k]);
+            for (k = 0; k < len1; k++) 
+		printf("%d", obj1[k]);
         } else if (strcmp(obj2, "#") == 0)
 
         {
