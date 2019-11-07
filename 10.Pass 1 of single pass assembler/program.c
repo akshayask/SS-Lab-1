@@ -109,8 +109,8 @@ int main(int argc, char * argv[])
 
             }
 
-        } //
-        else la =-
+        } 
+        //else la =-
 	fseek(f2, SEEK_SET, 0);
         fscanf(f1, "%s%s%s", la, mne, opnd);
     }
