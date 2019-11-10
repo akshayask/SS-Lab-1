@@ -1,0 +1,45 @@
+input.txt
+
+----------
+
+- COPY START 1000
+
+1000 - LDA ALPHA
+
+1003 - ADD ONE
+
+1006 - SUB TWO
+
+1009 - STA BETA
+
+1012 ALPHA BYTE C'KLNCE
+
+1017 ONE RESB2
+
+1019 TWO WORD 5
+
+1022 BETA RESW 1
+
+1025 - END - sybol.txt
+---------
+
+1012 ALPHA
+
+1017 ONE
+
+1019 TWO
+
+1022 BETA
+cse-swlab27@cseswlab27-OptiPlex-7010:~$ cd Desktop/SNEHA-48/
+
+
+
+
+cse-swlab27@cseswlab27-OptiPlex-7010:~/Desktop/SNEHA-48$ gcc pass2.c
+
+cse-swlab27@cseswlab27-OptiPlex-7010:~/Desktop/SNEHA-48$ ./a.out
+
+H^COPY^1000^25
+
+T^001000^001012^011017^051019^231022^7576786769^00005^ E^001000
+cse-swlab27@cseswlab27-OptiPlex-7010:~/Desktop/SNEHA-48$
