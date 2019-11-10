@@ -1,0 +1,42 @@
+1. Open and Read the input
+  file
+2. If the input line has 
+ the opcode “START” do the following
+2.1 Find if there is any operand 
+ field after “START”, initialize 
+ the LOCCTR
+to the operand value
+2.2 Otherwise if there is no
+ value in the operand field then
+ LOCCTR is set to zero
+3. Write the input line to 
+ the intermediate file
+4. Do the following steps 
+ until the opcode is END
+	4.1 Check the Symbol table, 
+	 if the symbol is not available then
+	 enter that symbol into the SYMTAB, 
+	 along with the memory address in which
+	 it is stored.Otherwise, the error message 
+	 should be displayed
+	4.2 If there is a opcode
+	    4.2.1 If opcode is present in the
+	    OPTAB, then increment the LOCCTR by 3
+	   4.2.2 If opcode is “WORD”,
+ 	   then increment LOCCTR by 3;
+	   4.2.3 If opcode is “BYTE”,
+	   then increment LOCCTR by 1;
+	  4.2.4 If opcode is “RESW” then 
+	  increment LOCCTR by the integer 
+	  equivalent of the operand value * 3; 
+ 	  4.2.5 If opcode is “RESB”, then
+	  increment LOCCTR by the integer equivalent
+	 of the operand value
+	4.3 Write the processed lines 
+	in the intermediate file along
+	 with their locationcounters
+5. To find the length of the program,
+ Subtract the starting address of the 
+ program from the final value of the LOCCTR
+6. Close all the files and exit
+
