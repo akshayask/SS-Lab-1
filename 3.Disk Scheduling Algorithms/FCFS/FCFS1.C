@@ -24,7 +24,7 @@ void main()
         total=0;
         for(i=0; i<n; i++)
         {
-                if(cu>a[i])
+                if(cu>a[i])// if current head position greater than request.
                         total=total+cu-a[i];  //add the head movement from current position to cyllinder in the request array
                 else
                         total=total+a[i]-cu;

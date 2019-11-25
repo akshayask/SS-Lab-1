@@ -39,7 +39,7 @@ void main()
         {
                 if(cur==a[i]) //find the position of cur in request array
                 {
-                        t=i;
+                        t=i;//
                         break;
                 }
         }
