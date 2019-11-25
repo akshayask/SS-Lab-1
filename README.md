@@ -35,7 +35,7 @@ KTU system software lab programs explained
 
 - **[6.Producer-Consumer Problem](https://github.com/Ajil5467/SS-Lab/tree/master/6.Producer-Consumer%20Problem)**
 
-- **[7.Dining-Philosophers Problem](https://github.com/Ajil5467/SS-Lab/tree/master/6.Producer-Consumer%20Problem)**
+- **[7.Dining-Philosophers Problem](https://github.com/Ajil5467/SS-Lab/tree/master/7.Dining-Philosophers%20Problem)**
 
 - **[8.Pass 1 of Two pass assembler](https://github.com/Ajil5467/SS-Lab/tree/master/8.Pass%201%20of%20Two%20pass%20assembler)**
 
