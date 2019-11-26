@@ -8,7 +8,7 @@ void tot()
 //driver code
 void main()
 {
-        int nc,n,a[10],i,temp,j,ch,cu,t;
+        int nc,n,a[10],i,temp,j,ch,cu,t,x;
         printf("enter no of cyllinders\n");
         scanf("%d",&nc);
         printf("enter no of requests\n");
@@ -22,13 +22,15 @@ void main()
                 scanf("%d",&a[i]); //read the request into array
         }
         total=0;
+        x=cu;
         for(i=0; i<n; i++)
-        {
-                if(cu>a[i])// if current head position greater than request.
-                        total=total+cu-a[i];  //add the head movement from current position to cyllinder in the request array
-                else
-                        total=total+a[i]-cu;
-                cu=a[i]; //set current position to currently accessed request.
+        {       x=x-a[i];
+                if(x<0)
+                {       x=-x; //for getting absolute value
+                }
+                printf("%d\t",x); //servicing request in this order
+                tot=tot+x;
+                
         }
         tot();
 }
