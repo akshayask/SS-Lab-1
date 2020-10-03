@@ -13,13 +13,7 @@ printf("enter no of cyllinders\n");
 scanf("%d",&nc);
 printf("enter no of requests\n");
 scanf("%d",&n);
-printf("enter current head position\n");
-scanf("%d",&cur);
-printf("enter requests\n");
-cu=cur;
-curr=cu;
-for(i=0;i<n;i++)
-{
+
 	scanf("%d",&a[i]);//read the requests into array
 }
 total=0;
